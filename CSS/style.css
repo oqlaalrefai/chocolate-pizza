@@ -1,194 +1,185 @@
-
-*{ box-sizing: border-box;}
-   
-body { margin: 0; }
-
-
-
-
-/*================================ Header===================*/
-
-#topLeftImage{position: relative;float: left;}
-
-#h2Header{font-size:30px; font-weight: 800; font-family: 'Yellowtail', cursive; }
-   
-#links{ float: right; padding: 15px;}
-
-#parent {
-    list-style: none;
+h1,h2,h3,h4,h5,p {
     margin: 0;
     padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
 }
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-#parent > li {
-    display: inline-block; width: 50%;}
-    
-/*===========================================================*/
-  
-
-
-/*=========================Main=============================*/
-    
-main{
-    clear: both;   
-    margin: auto;
-    width: 100%;
-    padding: 20px;
-}
-
-#printImage{float: right;}
-.titleStyle{ font-size: x-large; font-weight: 800; font-family: 'Oswald', sans-serif; }
-.subTitle{font-size: x-small;}
-
-
-
-.mainImage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-  
-hr{
-    opacity: 0.4;
-    width: 100%;
-    height: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color:#666;
-}
-
-
-.container {
-    position: relative;
-    text-align: center;
-    color: black;
-  }
-  /* .top-middle  {
-    align-items: flex-start;
-    font-size: 40px;
-    position: absolute;
-    top: 25%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-  } */
-  label{
-      font-size: xx-large;
-  }
-  .top-left {
-    position: absolute;
-    top: 50px;
-    left: 270px;
-  }
-
-  .top-right {
-    position: absolute;
-    top: 50px;
-    right: 270px;
-  }
-  
-  form{
-    padding: 12px 20px;
-    margin: 8px 0;
+* {
     box-sizing: border-box;
-  }
- 
+}
 
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  }
-  
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
+body {
+    width: 960px;
+    margin: auto;
+    line-height: 1.5;
+}
 
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
+header {
+    padding: 25px 0;
+}
 
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .button {
-    background-color: brown;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
+header div{
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-
-
-  /*=================================================================*/
-
-
-
-/*======================= Footer===============================*/
-
-#footerHR { 
-    background: url('../images/small-logo.png') no-repeat top center;
-    background-size: contain;
-    display: block;
-    height: 18px;
-    border:1;
-    position: relative;
 }
-footer p{
+
+header div:last-child {
+    float: right;
+}
+
+.header_text {
+    padding-left: 10px;
+}
+
+.header_text p:first-child {
+    font-family: 'Yellowtail', cursive;
+    font-size: 30px;
+   
+}
+
+.header_text p:last-child {
+    font-size: 12px;
+    color: darkgray;
+   
+}
+
+.rss_icon {
+    padding-left: 5px;
+}
+
+.dashed_line {
+    background: url(../assets/img/hr-img.png);
+    width: 100%;
+    height: 15px;
+    margin-bottom: 60px;
+}
+
+.main_header {
+    margin-bottom: 30px;
+}
+
+.main_header div {
+    display: inline-block;
+}
+
+.main_header div:last-child {
+    float: right;
+    padding-top: 30px;
+}
+
+.main_header div:last-child p {
+    display: inline;
+    font-size: 10px;
+}
+
+.main_title_container h1 {
+    font-size: 40px;
+    font-weight:900;
+    font-family: 'Oswald', sans-serif;
+}
+.main_title_container p {
+    font-size: 12px;
+    color: darkgray;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.hero_image {
+    width: 100%;
+}
+
+.p_containers {
+    margin: 20px 0;
+}
+
+.p_containers p{
+    text-indent: 40px;
+    margin: 40px 0;
+    font-weight: 530;
+}
+
+.menu_list {
+    background: url(../assets/img/list-bg.png);
+    height: 300px;
+}
+
+.menu_list label {
+    display: inline-block;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 545;
+}
+
+.menu_list > div {
+    display: inline-block;
+    margin: 60px 100px;
+}
+
+.input_container {
+    padding: 3px 0;
+}
+
+.button_dashed_line {
+    background: url(../assets/img/hr-img.png);
+    width: 100%;
+    height: 15px;
+    margin-top: 40px;
+}
+
+.share_container {
+    margin-top: 20px;
+}
+
+.share_container {
+    display: flex;
+    align-items: center;
+}
+
+.share_container img {
+    width: 70px;
+    height: 70px;
+}
+
+.share_container div {
+    padding: 0 15px;
+}
+html{
+    padding: 0;
+
+    margin: 0;
+}
+
+
+.share_container button {
+    width: 400px;
+    height: 50px;
+    background-color: #bc7058;
+    color: white;
+}
+
+footer {
+    height: 200px;
+    margin-top: 50px;
     text-align: center;
+    font-size: 15px;
+    color: darkgray;
 }
-/*=================================================================*/
+
+.footer_border {
+    display: flex;
+    align-items: center;
+}
+
+.footer_border img {
+    padding: 0 10px;
+}
+
+div.line {
+    border-top: solid 1px lightgray;
+    flex: 1;
+}
+
+.footer_text {
+    padding-top: 20px;
+}
